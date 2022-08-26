@@ -25,6 +25,7 @@ int gettemp (void)
   n = read(f, buf, sizeof(buf) - 1);
   if (n < 0) {
     printf("Failed reading temp from file\n");
+    close(f);
     return 100;
   }
   buf[n] = '\0';
@@ -32,8 +33,11 @@ int gettemp (void)
   temp = atoi(buf);
   temp = temp / 1000;
   if (temp < 0 || temp > 100) {
+    close(f);
     return 100;
   }
+
+  close(f);
 
   return temp;
 }
