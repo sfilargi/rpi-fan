@@ -1,0 +1,31 @@
+Connect Fan pins as following
+
+Fan Pin 3 Don't connect
+
+
+Pi:
+
++--------------------------------------+
+|                                  . . | <- Fan Pin 2 (Power) (Outer Pi PIN (2))
+|                                  . . |
+|                                  . . | <- Fan Pin 1 (Ground) (Outer Pi PIN (6))
+|                                  . . |
+|                                  . . |
+|                                  . . | <- Fan Pin 4 (PWM) (Outer Pi PIN (12) (GPIO 18)
+|                                  . . |
+|                                  . . |
+|                                  . . |
+|                                  . . |
+|                                  . . |
+|                                  . . |
+|                                  . . |
+|                                  . . |
+|                                  . . |
+|                                  . . |
+|                                  . . |
+|                                  . . |
+|                                  . . |
+|                                  . . |
+|                                      |
+|                                      |
++-[Ethernet] [USB] [USB]---------------+
