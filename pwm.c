@@ -48,7 +48,7 @@ getfanpercentage (int temp)
   if (temp < 20)
     return 0;
 
-  if (temp > 80)
+  if (temp > 70)
     return 100;
 
   temp -= 20;
