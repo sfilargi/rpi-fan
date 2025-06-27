@@ -1,0 +1,9 @@
+[Unit]
+Description=Fan Controller
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/rpi-fan
+
+[Install]
+WantedBy=multi-user.target

@@ -80,6 +80,7 @@ main (int argc, char **argv)
       value = (percentage * RANGE) / 100;
       printf("Temp: %d, Fan%%: %d, Value: %d/%d\n",
 	     temp, percentage, value, RANGE);
+      fflush(stdout);
       bcm2835_pwm_set_data(PWM_CHANNEL, value);
       usleep(1 * 1000 * 1000);
     }
